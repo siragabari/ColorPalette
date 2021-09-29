@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Palette Designer</title>
+    <link rel='stylesheet' href='styles.css'>
+</head>
+<body>
+    <div class="colorInput">
+        <label class="text">Select color:</label> 
+        <input type="color" id="color" value="#ff0000">
+    </div>
+
+    <div class="harmonies">
+        <input type="checkbox" class="checkbox" id="1" onclick="selectHarmony(id)" checked=true/>
+        <label class="text">Analogous</label>
+        <input type="checkbox" class="checkbox" id="2" onclick="selectHarmony(id)"/>
+        <label class="text">Monochromatic</label>
+        <input type="checkbox" class="checkbox" id="3" onclick="selectHarmony(id)"/>
+        <label class="text">Triad</label>
+        <input type="checkbox" class="checkbox" id="4" onclick="selectHarmony(id)"/>
+        <label class="text">Complementary</label>
+        <input type="checkbox" class="checkbox" id="5" onclick="selectHarmony(id)"/>
+        <label class="text">Compound</label>
+        <input type="checkbox" class="checkbox" id="6" onclick="selectHarmony(id)"/>
+        <label class="text">Shades</label>
+    </div>
+
+    <div class="palette">
+        <div></div>
+        <div class="colorDisplay" id="colorDisplay1"></div>
+        <div class="colorDisplay" id="colorDisplay2"></div>
+        <div class="colorDisplay" id="colorDisplay3"></div>
+        <div class="colorDisplay" id="colorDisplay4"></div>
+        <div class="colorDisplay" id="colorDisplay5"></div>
+        <div class="text">HEX</div>
+        <div class="colorCode" id="colorHex1"></div>
+        <div class="colorCode" id="colorHex2"></div>
+        <div class="colorCode" id="colorHex3"></div>
+        <div class="colorCode" id="colorHex4"></div>
+        <div class="colorCode" id="colorHex5"></div>
+        <div class="text">RGB</div>
+        <div class="colorCode" id="colorRgb1"></div>
+        <div class="colorCode" id="colorRgb2"></div>
+        <div class="colorCode" id="colorRgb3"></div>
+        <div class="colorCode" id="colorRgb4"></div>
+        <div class="colorCode" id="colorRgb5"></div>
+        <div class="text">HSL</div>
+        <div class="colorCode" id="colorHsl1"></div>
+        <div class="colorCode" id="colorHsl2"></div>
+        <div class="colorCode" id="colorHsl3"></div>
+        <div class="colorCode" id="colorHsl4"></div>
+        <div class="colorCode" id="colorHsl5"></div>
+    </div>
+
+    <script src='script.js'></script>
+    <script src='conversions.js'></script>
+    <script src='harmonies.js'></script>
+</body>
+</html>
